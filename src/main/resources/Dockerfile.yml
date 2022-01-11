@@ -1,0 +1,5 @@
+FROM openjdk:11
+EXPOSE 8080
+WORKDIR /app
+COPY ./desafio_2-0.0.1-SNAPSHOT.jar /app
+ENTRYPOINT [ "java", "-jar", "/app/desafio_2-0.0.1-SNAPSHOT.jar" ]
